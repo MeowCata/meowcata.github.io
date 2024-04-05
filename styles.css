@@ -1,0 +1,140 @@
+#dv {
+				border: 2px dotted skyblue;
+			}
+
+			.powered-by {
+				position: absolute;
+				top: 10px;
+				/* 距离顶部的距离 */
+				right: 10px;
+				/* 距离右侧的距离 */
+				color: gray;
+				/* 文字颜色 */
+				font-size: 12px;
+				/* 文字大小 */
+			}
+
+			.made-by {
+				position: absolute;
+				top: 30px;
+				/* 距离顶部的距离 */
+				right: 10px;
+				/* 距离右侧的距离 */
+				color: gray;
+				/* 文字颜色 */
+				font-size: 12px;
+				/* 文字大小 */
+			}
+
+			#myButton {
+				display: inline;
+				animation: colorChange 10s infinite;
+				/* 调整动画时长 */
+			}
+
+			.separator {
+				height: 20px;
+				/* 设置竖线高度 */
+				width: 1px;
+				/* 设置竖线宽度 */
+				background-color: white;
+				/* 设置竖线颜色 */
+				margin: 0 10px;
+				/* 设置竖线两侧的间距，可根据需要调整 */
+			}
+
+			.button {
+				background-color: #3498db;
+				color: white;
+				padding: 8px 16px;
+				font-size: 16px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			.button1 {
+				background-color: #aa55ff;
+				color: white;
+				padding: 8px 16px;
+				font-size: 16px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			.button2 {
+				background-color: #364bc0;
+				color: lightcyan;
+				padding: 8px 8px;
+				font-size: 16px;
+				border: none;
+				border-radius: 5px;
+				cursor: progress;
+			}
+
+			@keyframes colorChange {
+				0% {
+					color: red;
+					/* 开始颜色 */
+				}
+
+				10% {
+					color: orange;
+					/* 中间颜色1 */
+				}
+
+				20% {
+					color: yellow;
+					/* 中间颜色2 */
+				}
+
+				30% {
+					color: green;
+					/* 中间颜色3 */
+				}
+
+				40% {
+					color: cyan;
+					/* 中间颜色4 */
+				}
+
+				50% {
+					color: blue;
+					/* 中间颜色5 */
+				}
+
+				60% {
+					color: purple;
+					/* 中间颜色6 */
+				}
+
+				70% {
+					color: pink;
+					/* 中间颜色7 */
+				}
+
+				80% {
+					color: brown;
+					/* 中间颜色8 */
+				}
+
+				90% {
+					color: navajowhite;
+					/* 中间颜色9 */
+				}
+
+				100% {
+					color: red;
+					/* 结束颜色，与开始颜色相同，形成循环 */
+				}
+			}
+			.container {
+			    width: 100%;
+			    height: 200px;
+			    position: fixed;
+			    z-index: -1;
+			    /*opacity: 0.37;*/
+			    bottom: 0;
+			    left: 0;
+			}
