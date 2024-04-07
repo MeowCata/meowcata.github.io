@@ -10,7 +10,7 @@
 		<script src="fish.js" type="text/javascript"></script>
 		<!--<script src="snow.js" type="text/javascript"></script>!-->
 		<script src="dynamicTitle.js" type="text/javascript"></script>
-	
+		
 	<body>
 		<script>
 			function getMood() {
@@ -28,6 +28,13 @@
 				changeBackgroundColor();
 				RENDERER.init();
 				dynamicTitle();
+				const htmlBody = document.body;
+				const prefersColorScheme = window.matchMedia('(prefers-color-scheme: light)');
+				if (prefersColorScheme.matches) {
+					htmlBody.style.backgroundColor = 'white'; //console.log('浅色模式');
+				} else {
+					htmlBody.style.backgroundColor = 'black'; //console.log('深色模式');
+				}
 			}
 			/*let today = new Date();
 			let day = String(today.getDate()); //.padStart(2, '0')
@@ -42,13 +49,12 @@
 		
 		<h1 style="font-size:30px;" id="myButton">Welcome to visit MeowCata's Page!</h1>
 		<h1 id="myButton">你好！</h1>
-
+		
 		<div id="dv"></div>
 
 		<div class="separator"></div>
 		
-		<!--<button class="button2" onclick="changeBackgroundColor()">Toggle Theme</button>!-->
-		<button class="button2" onclick="getMood()">今日人品</button>
+		<button class="button2" onclick="changeBackgroundColor()">Toggle Theme</button>
 		<button class="button2" onclick="window.history.back()">Go Back</button>
 		<!--<button class="button2" onclick="window.history.go(1)">forward</button>!-->
 		
@@ -61,6 +67,8 @@
 			onclick="window.open(&#39;https://blog.csdn.net/weixin_45122104&#39;)">My
 			CSDN
 		</button>
+		<button class="button" onclick="getMood()">今日人品</button>
+		
 		<h3></h3>
 		<iframe src="snow.html" width="width_value" height="height_value" frameborder="frameborder_value"></iframe>
 		<h1></h1>

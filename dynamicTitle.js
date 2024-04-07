@@ -1,6 +1,6 @@
 // <!-- 标题动态切换代码 Start -->
 			//https://zhangge.net/5032.html
-			window.onload = function() {
+			function dynamicTitle() {
 				let hour = new Date().getHours()
 				let str = ''
 				if (hour < 6) {

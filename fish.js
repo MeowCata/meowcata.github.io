@@ -1,6 +1,6 @@
-window.onload = function() {
+/*window.onload = function() {
 	RENDERER.init(); //line 104
-}
+}*/
 //<div id="fish" class="container"></div>
 /*
 .container {

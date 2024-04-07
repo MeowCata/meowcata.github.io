@@ -1,14 +1,23 @@
 <html><head></head>
-<script src="changeColor.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script src="changeColor.js" type="text/javascript"></script>
+<script src="heartOnClick.js" type="text/javascript"></script>
 <script>
 	window.onload = function(){
-		changeBackgroundColor();
+		const htmlBody = document.body;
+		const prefersColorScheme = window.matchMedia('(prefers-color-scheme: light)');
+		if (prefersColorScheme.matches) {
+			htmlBody.style.backgroundColor = 'white'; //console.log('浅色模式');
+		} else {
+			htmlBody.style.backgroundColor = 'black'; //console.log('深色模式');
+		}
 	}
 </script>
+<button class="button2" onclick="changeBackgroundColor()">Light/Dark</button>
 <script language="javascript">
 var snow_size=new Array();  //存储随机雪花大小
 var snow_color=new Array(); //存储随机雪花颜色
-var num=50; //雪花的个数
+var num=30; //雪花的个数
 var smallest=5; //雪花的最小尺寸
 var largest=30; //雪花的最大尺寸
 var dx=new Array(); //水平振动参数
