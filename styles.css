@@ -28,7 +28,7 @@
 
 			#myButton {
 				display: inline;
-				animation: colorChange 10s infinite;
+				animation: colorChange 15s infinite;
 				/* 调整动画时长 */
 			}
 
@@ -137,4 +137,5 @@
 			    /*opacity: 0.37;*/
 			    bottom: 0;
 			    left: 0;
+
 			}
